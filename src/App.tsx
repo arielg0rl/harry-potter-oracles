@@ -1,5 +1,6 @@
+/* eslint-disable */
 import './App.scss';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router';
 
 import Oracle from './components/Oracle';
@@ -41,3 +42,4 @@ export const App: React.FC = () => {
 }
 
 export default App;
+/* eslint-disable */

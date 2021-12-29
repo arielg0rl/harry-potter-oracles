@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
@@ -11,3 +12,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+/* eslint-disable */

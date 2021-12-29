@@ -38,7 +38,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 24;
-  height: 500px;
+  min-height: 540px;
   max-width: 700px;
   min-width: 360px;
   background-color: transparent;
@@ -51,7 +51,7 @@ body {
   font-size: 32px;
   border-radius: 16px;
   padding: 0 30px;
-  box-shadow: 0 1600px 3200px 3200px rgba(0, 0, 0, 0.50);
+  box-shadow: 0 1600px 3200px 3200px rgba(82, 194, 214, 0.363);
 
   &__content {
     display: flex;
@@ -65,11 +65,12 @@ body {
       padding: 16px 0;
       align-self: flex-end;
       cursor: pointer;
+      color: grey;
 
       &::before {
         position: absolute;
         content: '';
-        background-color: white;
+        background-color: grey;
         height: 1px;
         width: 10px;
         transform: rotate(135deg) translateX(10.5px);
@@ -79,7 +80,7 @@ body {
       &::after {
         position: absolute;
         content: '';
-        background-color: white;
+        background-color: grey;
         height: 1px;
         width: 10px;
         transform: rotate(45deg) translateX(10.5px);
