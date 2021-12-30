@@ -38,6 +38,7 @@ export const Oracle: React.FC<Props> = ({ onClose, oracle }) => {
               </button>
               <div className="description__content-text">{oracle.text}</div>
             </div>
+            <div className="description__content-logo">by wallblik studio</div>
           </div>
         </div>
       </div>
