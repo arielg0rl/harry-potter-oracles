@@ -15,13 +15,10 @@ export const OracleCells: React.FC<Props> = ({ onSelect }) => {
     <div className="oracle">
       {data.map(oracle => (
         <div className="oracle__cell" key={oracle.id}>
-          <Link to={`/${oracle.id}`} style={{ textDecoration: 'none'}}>
-            <div onClick={() => onSelect(oracle)}>
-              <div className="oracle__cell-num">{oracle.oracleNumber}</div>
-            </div>
+          <Link className="oracle__cell-link" to={`/${oracle.id}`} style={{ textDecoration: 'none'}}>
+            <div onClick={() => onSelect(oracle)} className="oracle__cell-num">{oracle.oracleNumber}</div>
           </Link>
         </div>
-        
       ))}
     </div>
   )
