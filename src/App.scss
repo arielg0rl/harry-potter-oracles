@@ -18,6 +18,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+
+  @media (max-width: 600px) {
+    background-image: url("./pattern.jpg");
+  }
 }
 
 .wrapper {
@@ -39,10 +43,10 @@ body {
   max-width: 700px;
   min-width: 360px;
   background-color: transparent;
-  background-image: url("./photo_2021-12-30_00-33-14.jpg");
+  // background-image: url("./photo_2021-12-30_00-33-14.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-color: black;
+  background-color: rgb(92, 11, 31);
   background-size: contain;
   border: 1px solid white;
   font-size: 32px;
@@ -84,6 +88,10 @@ body {
         transform: rotate(45deg) translateX(10.5px);
       }
     }
+
+    &-text {
+      color: rgb(201, 138, 21);
+    }
   }
 }
 
@@ -111,7 +119,7 @@ body {
     font-size: 40px;
     border: 1px solid white;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color:rgba(26, 45, 97, 0.671);
     margin-bottom: 20px;
     text-align: center;
     padding: 10px 14px;
@@ -143,7 +151,7 @@ body {
     justify-content: center;
     border: 1px solid white;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgba(26, 45, 97, 0.671);
     margin: 7px;
 
     @media (max-width: 600px) {

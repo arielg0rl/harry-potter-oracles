@@ -20,7 +20,7 @@ export const Oracle: React.FC<Props> = ({ onClose, oracle }) => {
   return ReactDom.createPortal(
     <>
       <div
-        style={{ position: 'absolute', top: '0', width: '100vw', height: '100vh' }}
+        style={{ position: 'absolute', top: '0', bottom: '0', width: '100vw', height: '300vh' }}
         onKeyPress={() => handleClose()}
         onClick={() => handleClose()}
       >
@@ -36,7 +36,7 @@ export const Oracle: React.FC<Props> = ({ onClose, oracle }) => {
               >
                 Закрити
               </button>
-              <div>{oracle.text}</div>
+              <div className="description__content-text">{oracle.text}</div>
             </div>
           </div>
         </div>

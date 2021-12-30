@@ -27,7 +27,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="App">
-      <div className="App__h">Знайди номер свого передбачення нижче і натискай!</div>
+      <div className="App__h">"Щоденний віщун" <br></br> Передбачення та настанови на кожен день</div>
       <OracleCells onSelect={chooseOracle} />
       {selectedOracle && (
           <Routes>
